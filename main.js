@@ -125,7 +125,8 @@ class Teacher {
         this.mail = mail;
     }
 }
-createObjArr(4, Teacher)
+
+// createObjArr(4, Teacher)
 
 function createInputElement(){
 const dataArray = []
@@ -150,10 +151,11 @@ const dataArray = []
 
 const teacherObj = new Teacher()
 function createUserDataBaseObject(objName){
-    let i = 0
-        for(key in objName){
-            objName[key] = dataArray[i++]
-        }
+    const teacherObjArray = []
+
+    if(teacherObjArray.length<4){
+        objArray.push(teacherObj)
+    }
     console.log(objName)
     console.log(dataArray)
 }
